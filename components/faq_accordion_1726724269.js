@@ -2,8 +2,8 @@
   <div>
     <section class="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8 bg-white">
       <div class="space-y-3 text-center">
-        <h1 class="text-4xl text-gray-800 font-semibold pt-10">FAQ_TITLE_PLACEHOLDER_TEXT</h1>
-        <p class="text-gray-600 max-w-lg mx-auto text-lg">FAQ_SUBTITLE_PLACEHOLDER_TEXT</p>
+        <h1 class="text-4xl text-gray-800 font-semibold pt-10">Frequently Asked Questions</h1>
+        <p class="text-gray-600 max-w-lg mx-auto text-lg">Everything you need to know about our food delivery service</p>
       </div>
       <div class="mt-14 max-w-2xl mx-auto">
         <div v-for="(item, index) in faqs" :key="index" class="space-y-5 mt-5 overflow-hidden border-b border-gray-200 hover:bg-gray-50 cursor-pointer" @click="toggleFaq(index)">
@@ -36,11 +36,11 @@ export default {
     return {
       selectedFaq: null,
       faqs: [
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_1", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_1" },
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_2", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_2" },
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_3", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_3" },
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_4", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_4" },
-        { q: "FAQ_PLACEHOLDER_QUESTION_TEXT_5", a: "FAQ_PLACEHOLDER_ANSWER_TEXT_5" }
+        { q: "How does your food delivery app work?", a: "Our app allows you to browse local restaurants, place orders, and have food delivered straight to your door. Simply download the app, create an account, select your items, and track your delivery in real-time." },
+        { q: "What are your delivery fees?", a: "Delivery fees vary based on your location and the restaurant you're ordering from. The exact fee will be displayed before you complete your order. We also offer a subscription service for free delivery on eligible orders." },
+        { q: "How long does delivery usually take?", a: "Delivery times depend on factors like distance, traffic, and restaurant preparation times. On average, most orders arrive within 30-45 minutes. You can always check the estimated delivery time in the app." },
+        { q: "Can I schedule an order for later?", a: "Yes! Our app allows you to schedule orders up to a week in advance. Simply select your desired delivery time during checkout." },
+        { q: "What if there's an issue with my order?", a: "If you experience any problems with your order, please use the 'Help' section in our app. Our customer support team is available 24/7 to assist you with refunds, missing items, or any other concerns." }
       ]
     }
   },
